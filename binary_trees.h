@@ -69,5 +69,11 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 */
 void binary_tree_print(const binary_tree_t *tree);
 
+unsigned char is_leaf(const binary_tree_t *node);
 
+size_t depth(const binary_tree_t *tree);
+
+const binary_tree_t *get_leaf(const binary_tree_t *tree);
+
+int is_perfect_recursive(const binary_tree_t *tree, size_t leaf_depth, size_t level);
 #endif /*BINARY_TREES_H*/
